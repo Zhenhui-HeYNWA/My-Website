@@ -60,10 +60,38 @@
     @apply bg-background text-foreground;
   }
 }
+@layer components {
+  @keyframes borderRadiusAnimation {
+    0% {
+      border-radius: 46% 54% 65% 35% / 26% 38% 62% 74%;
+    }
+    25% {
+      border-radius: 65% 35% 35% 65% / 47% 73% 27% 53%;
+    }
+    50% {
+      border-radius: 45% 55% 35% 65% / 69% 33% 67% 31%;
+    }
+    75% {
+      border-radius: 7% 93% 75% 25% / 34% 66% 34% 66%;
+    }
+    100% {
+      border-radius: 42% 58% 15% 85% / 74% 31% 69% 26%;
+    }
+  }
 
+  .animate-border-radius {
+    animation: borderRadiusAnimation 10s ease-in-out infinite alternate;
+  }
+  .stop-animation {
+    animation-play-state: paused;
+  }
+}
 .h1 {
   @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold;
 }
 .subtitle {
   @apply text-muted-foreground text-lg mb-8 font-light;
+}
+.badge {
+  @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
 }
