@@ -6,6 +6,8 @@ import {
   RiFacebookFill,
   RiInstagramFill,
 } from 'react-icons/ri';
+import React from 'react';
+
 import Link from 'next/link';
 
 const icons = [

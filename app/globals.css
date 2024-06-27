@@ -78,9 +78,29 @@
       border-radius: 42% 58% 15% 85% / 74% 31% 69% 26%;
     }
   }
+  @keyframes borderRadiusAnimation-2 {
+    0% {
+      border-radius: 45% 55% 35% 65% / 69% 33% 67% 31%;
+    }
+    25% {
+      border-radius: 42% 58% 15% 85% / 74% 31% 69% 26%;
+    }
+    50% {
+      border-radius: 7% 93% 75% 25% / 34% 66% 34% 66%;
+    }
+    75% {
+      border-radius: 46% 54% 65% 35% / 26% 38% 62% 74%;
+    }
+    100% {
+      border-radius: 65% 35% 35% 65% / 47% 73% 27% 53%;
+    }
+  }
 
   .animate-border-radius {
     animation: borderRadiusAnimation 10s ease-in-out infinite alternate;
+  }
+  .animate-border-radius-2 {
+    animation: borderRadiusAnimation-2 10s ease-in-out infinite alternate;
   }
   .stop-animation {
     animation-play-state: paused;
