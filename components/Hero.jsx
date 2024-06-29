@@ -76,7 +76,7 @@ const Hero = () => {
             <div className='animate-border-radius-2 bg-[#15A374]  w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
             <DevImg
               containerStyles=' animate-border-radius bg-[#15A374] hover:stop-animation w-[510px] h-[462px] bg-no-repeat relative bg-bottom'
-              imgSrc='/hero/developer.png'
+              imgSrc='bg-[url(/hero/myimg.jpg)]'
             />
           </div>
         </div>
