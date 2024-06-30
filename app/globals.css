@@ -54,24 +54,10 @@
 .special-logo {
   filter: invert(0%);
 }
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.dark .special-logo {
+  filter: invert(100%);
 }
 
-.before\\:rotate {
-  animation: rotate 4s linear infinite;
-}
-
-/* 确保 dark 模式生效 */
-.dark .before\\:bg-dots_dark {
-  background-image: url('/dots-dark.svg');
-}
 @layer base {
   * {
     @apply border-border;
@@ -148,9 +134,17 @@
 }
 
 .section-title {
-  @apply text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 before:bg-dots_light before:dark:bg-dots_dark before:bg-no-repeat before:bg-center 
-  before:w-[24px] before:h-[24px];
+  @apply text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 before:bg-dots_light before:dark:bg-dots_dark before:bg-no-repeat before:bg-center before:w-[24px] before:h-[24px];
 }
+
 .badge {
   @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
+}
+
+/* swiper bullets styles */
+
+.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @apply bg-primary;
 }
