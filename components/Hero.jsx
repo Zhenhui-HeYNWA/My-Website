@@ -33,11 +33,11 @@ const Hero = () => {
             {/* buttons */}
             <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
               <Link href='/contact'>
-                <Button className='gap-x-2'>
+                <Button className='gap-x-2 shadow-md'>
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant='secondary' className='gap-x-2'>
+              <Button variant='secondary' className='gap-x-2 shadow-md'>
                 Download CV <Download size={18} />
               </Button>
             </div>
@@ -75,7 +75,7 @@ const Hero = () => {
             />
             <div className='animate-border-radius-2 bg-[#15A374]  w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
             <DevImg
-              containerStyles=' animate-border-radius bg-[#15A374] hover:stop-animation w-[510px] h-[462px] bg-no-repeat relative bg-bottom'
+              containerStyles=' animate-border-radius bg-[#15A374] hover:stop-animation w-[500px] h-[500px] bg-no-repeat relative bg-bottom'
               imgSrc='bg-[url(/hero/myimg.jpg)]'
             />
           </div>

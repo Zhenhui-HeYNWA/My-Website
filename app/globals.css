@@ -55,11 +55,23 @@
   filter: invert(0%);
 }
 
-/* 暗模式样式 */
-.dark .special-logo {
-  filter: invert(100%);
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
+.before\\:rotate {
+  animation: rotate 4s linear infinite;
+}
+
+/* 确保 dark 模式生效 */
+.dark .before\\:bg-dots_dark {
+  background-image: url('/dots-dark.svg');
+}
 @layer base {
   * {
     @apply border-border;
