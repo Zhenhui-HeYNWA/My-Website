@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from './ui/button';
+
 //import Swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
 //import swiper styles
