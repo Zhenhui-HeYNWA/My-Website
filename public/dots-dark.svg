@@ -1,4 +1,5 @@
-<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path  class="path1" d="M8.47989 20.1305C13.1632 20.1305 16.9598 16.3339 16.9598 11.6507C16.9598 6.96743 13.1632 3.1709 8.47989 3.1709C3.79658 3.1709 0 6.96743 0 11.6507C0 16.3339 3.79658 20.1305 8.47989 20.1305Z" fill="#4F5177"/>
-<path class="path2" d="M20.7668 9.04492C20.7668 13.488 17.165 17.0899 12.7218 17.0899C8.27863 17.0899 4.67676 13.488 4.67676 9.04492C4.67676 4.60184 8.27863 1 12.7218 1C17.165 1 20.7668 4.60184 20.7668 9.04492Z" stroke="#15A374" stroke-width="1.73945"/>
-</svg>
+<svg id="euFAiqtUgjr1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="30" height="30">
+<style><![CDATA[
+#euFAiqtUgjr2_tr {animation: euFAiqtUgjr2_tr__tr 3000ms linear infinite normal forwards}@keyframes euFAiqtUgjr2_tr__tr { 0% {transform: translate(15.411428px,15.760974px) rotate(0deg)} 100% {transform: translate(15.411428px,15.760974px) rotate(360deg)}} #euFAiqtUgjr3_tr {animation: euFAiqtUgjr3_tr__tr 3000ms linear infinite normal forwards}@keyframes euFAiqtUgjr3_tr__tr { 0% {transform: translate(15px,15px) rotate(0deg)} 100% {transform: translate(15px,15px) rotate(-359deg)}}
+]]></style>
+<g id="euFAiqtUgjr2_tr" transform="translate(15.411428,15.760974) rotate(0)"><path d="M7.499991,18.1709c4.142127,0,7.500008-3.357921,7.500008-7.5s-3.357881-7.5-7.500008-7.5-7.499991,3.357859-7.499991,7.5s3.357864,7.5,7.499991,7.5Z" transform="translate(-8.08134,-17.012355)" fill="#4f5177"/></g><g id="euFAiqtUgjr3_tr" transform="translate(15,15) rotate(0)"><path d="M19.67676,8.499972C19.67676,12.642086,16.318968,16,12.176779,16s-7.500019-3.357914-7.500019-7.500028s3.357857-7.499972,7.500019-7.499972s7.499981,3.357858,7.499981,7.499972Z" transform="translate(-12.125762,-2.707887)" fill="none" stroke="#15a374" stroke-width="1.73945"/></g></svg>
