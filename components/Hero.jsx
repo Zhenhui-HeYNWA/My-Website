@@ -15,7 +15,7 @@ import Socials from './Socials';
 
 const Hero = () => {
   return (
-    <section className='py-12 xl:py-24 h-[84vh] xt:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none'>
+    <section className='py-12 xl:py-24 h-[84vh] xt:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none '>
       <div className='container mx-auto'>
         <div className='flex justify-between gap-x-8'>
           {/* text */}
@@ -75,7 +75,7 @@ const Hero = () => {
             />
             <div className='animate-border-radius-2 bg-[#15A374]  w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
             <DevImg
-              containerStyles=' animate-border-radius bg-[#15A374] hover:stop-animation w-[500px] h-[500px] bg-no-repeat relative bg-bottom'
+              containerStyles='animate-border-radius  hover:stop-animation w-[500px] h-[500px] bg-no-repeat relative bg-bottom'
               imgSrc='bg-[url(/hero/myimg.jpg)]'
             />
           </div>
@@ -83,8 +83,8 @@ const Hero = () => {
         {/* icon */}
         <div
           className='hidden md:flex absolute left-2/4 bottom-44 xl:bottom-22
-             animate-bounce
-          '>
+           animate-bounce
+        '>
           <RiArrowDownSLine className='text-3xl text-primary' />
         </div>
       </div>

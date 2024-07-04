@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Description } from '@radix-ui/react-dialog';
+
 const servicesData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,

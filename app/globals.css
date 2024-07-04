@@ -141,6 +141,32 @@
   @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
 }
 
+.typewriter {
+  border-right: 0.4rem solid #15a374;
+  margin: 0 auto;
+
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #15a374;
+  }
+}
+
 /* swiper bullets styles */
 
 .swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet,

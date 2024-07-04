@@ -33,7 +33,7 @@ const Contact = () => {
             {/* address */}
             <div className='flex items-center gap-x-8'>
               <HomeIcon size={18} className='text-primary' />
-              <div>285/latorde st, Melbourne 3000 VIC</div>
+              <div> 285 La Trobe st, Melbourne 3000 VIC</div>
             </div>
             {/* phone */}
             <div className='flex items-center gap-x-8'>
@@ -41,9 +41,7 @@ const Contact = () => {
               <div> +61 0435816339</div>
             </div>
           </div>
-          <form action=''>
-            <Form />
-          </form>
+          <Form />
         </div>
       </div>
     </section>

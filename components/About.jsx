@@ -22,7 +22,7 @@ const infoData = [
     icon: <GraduationCap size={20} />,
     text: 'Bachelor of Information Technology',
   },
-  { icon: <HomeIcon size={20} />, text: '2005/285 La Trobe st' },
+  { icon: <HomeIcon size={20} />, text: '285 La Trobe st' },
 ];
 
 const qualificationData = [
@@ -121,7 +121,7 @@ const About = () => {
   };
 
   return (
-    <section className='xl:h-[860px] pb-12 xl:py-24'>
+    <section className='xl:h-[860px] pb-12 xl:py-24 pt-16'>
       <div className='container mx-auto'>
         <h2 className='section-title mb-8 xl:mb-16 text-center mx-auto'>
           About Me
@@ -132,7 +132,7 @@ const About = () => {
           {/* image */}
           <div className='hidden xl:flex flex-1 relative justify-center'>
             <DevImg
-              containerStyles=' bg-inherit w-[300px] h-[300px] bg-no-repeat relative '
+              containerStyles=' animate-border-radius bg-[#15A374]  hover:stop-animation w-[350px] h-[350px] bg-no-repeat relative '
               imgSrc='bg-[url(/about/1234.png)]'
             />
           </div>

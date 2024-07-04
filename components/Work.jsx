@@ -91,7 +91,6 @@ xl:items-start'>
         {/* slider */}
         <div className='xl:max-w-[1000px] xl:absolute right-20 top-0'>
           <Swiper
-            className='h-[480px]'
             slidesPerView={1}
             breakpoints={{
               640: {
@@ -100,7 +99,8 @@ xl:items-start'>
             }}
             spaceBetween={30}
             modules={[Pagination]}
-            pagination={{ clickable: true }}>
+            pagination={{ clickable: true }}
+            className='h-[520px]'>
             {/* show only the first 4 project for the sliders  */}
 
             {projectData.slice(0, 4).map((project, index) => {
