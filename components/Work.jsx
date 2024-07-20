@@ -26,9 +26,9 @@ const projectData = [
     github: '/',
   },
   {
-    image: '/work/2.png',
-    category: 'next js ',
-    name: 'Nexa Website',
+    image: '/work/next-weather-app.png',
+    category: 'next js',
+    name: 'Next-weather',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa.',
     link: '/',
@@ -36,7 +36,7 @@ const projectData = [
   },
   {
     image: '/work/3.png',
-    category: 'React js ',
+    category: 'React js',
     name: 'Nexa Website',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa.',

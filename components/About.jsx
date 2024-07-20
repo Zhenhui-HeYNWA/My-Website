@@ -316,7 +316,7 @@ const About = () => {
                               imgPath === '/about/nextjs.svg';
 
                             return (
-                              <div>
+                              <div className='hover:scale-110 transition-all ease-linear'>
                                 <Image
                                   src={imgPath}
                                   width={48}

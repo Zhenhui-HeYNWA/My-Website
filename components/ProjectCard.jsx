@@ -14,9 +14,9 @@ const ProjectCard = ({ project }) => {
         dark:bg-secondary/40 xl:bg-work_project_bg_light 
         xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden'>
           <Image
-            className='absolute bottom-0 shadow-2xl rounded-xl'
+            className='absolute bottom-5  shadow-2xl rounded-xl '
             src={project.image}
-            width={247}
+            width={300}
             height={250}
             alt=''
             property=''
