@@ -21,7 +21,7 @@ const projectData = [
     category: 'React js ',
     name: 'React-Twitter-Clone',
     description:
-      'React Twitter Clone is a modern social platform for posting, following, and real-time notifications.',
+      'React Twitter Clone is a modern social platform for posting, following, and real-time messages.',
     link: 'https://react-twitter-clone.onrender.com/',
     github: 'https://github.com/Zhenhui-HeYNWA/React-Twitter-clone',
   },
@@ -30,7 +30,7 @@ const projectData = [
     category: 'next js',
     name: 'Next-weather',
     description:
-      'Next.js Weather App provides real-time weather updates with a sleek, user-friendly interface..',
+      'Next.js Weather App provides real-time weather updates with a sleek, user-friendly interface.',
     link: 'https://nextjs-weather-app-psi-peach.vercel.app/',
     github: 'https://github.com/Zhenhui-HeYNWA/nextjs-weather-app',
   },

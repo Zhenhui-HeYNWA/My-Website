@@ -63,57 +63,72 @@ const skillsData = [
     title: 'skills',
     data: [
       {
-        name: 'HTML, CSS',
+        name: 'Development Tools',
+        img: [
+          {
+            name: 'Visual Studio Code',
+            imgPath: '/about/vscode.svg',
+          },
+          {
+            name: 'Postman',
+            imgPath: '/about/postman.svg',
+          },
+        ],
       },
       {
-        name: 'Front-end Development',
+        name: 'Styling',
+        img: [
+          {
+            name: 'Tailwind CSS',
+            imgPath: '/about/tailwind.svg',
+          },
+          {
+            name: 'CSS3',
+            imgPath: '/about/css-3.svg',
+          },
+          {
+            name: 'SCSS',
+            imgPath: '/about/scss.svg',
+          },
+          {
+            name: 'HTML5',
+            imgPath: '/about/html-5.svg',
+          },
+        ],
       },
       {
-        name: 'JavaScript',
+        name: 'Programming Languages',
+        img: [
+          {
+            name: 'JavaScript',
+            imgPath: '/about/js.svg',
+          },
+        ],
       },
       {
-        name: 'Back-end Development',
-      },
-    ],
-  },
-  {
-    title: 'tools',
-    data: [
-      {
-        imgPath: '/about/vscode.svg',
-      },
-      {
-        imgPath: '/about/postman.svg',
-      },
-      {
-        imgPath: '/about/tailwind.svg',
-      },
-      {
-        imgPath: '/about/css-3.svg',
-      },
-      {
-        imgPath: '/about/html-5.svg',
-      },
-      {
-        imgPath: '/about/js.svg',
-      },
-      {
-        imgPath: '/about/mongo.svg',
-      },
-      {
-        imgPath: '/about/react-query.svg',
-      },
-      {
-        imgPath: '/about/nextjs.svg',
-      },
-      {
-        imgPath: '/about/scss.svg',
-      },
-      {
-        imgPath: '/about/react.svg',
-      },
-      {
-        imgPath: '/about/node-js.svg',
+        name: 'Frameworks & Libraries',
+        img: [
+          {
+            name: 'MongoDB',
+            imgPath: '/about/mongo.svg',
+          },
+          {
+            name: 'Next.js',
+            imgPath: '/about/nextjs.svg',
+          },
+          {
+            name: 'React',
+            imgPath: '/about/react.svg',
+          },
+          {
+            name: 'Query',
+            imgPath: '/about/react-query.svg',
+          },
+          {
+            name: 'Node.js',
+            imgPath: '/about/node-js.svg',
+          },
+        ],
       },
     ],
   },
@@ -286,50 +301,43 @@ const About = () => {
                     <h3 className='h3 mb-8'>What I Use Everyday</h3>
                     <div className='mb-16 '>
                       <h4 className='text-xl font-semibold mb-2'>Skills</h4>
-                      <div className='border-b border-border mb-4'></div>
-                      {/* skill list  */}
+                      <div className='border-b border-border mb-2'></div>
+                      {/* skill list */}
                       <div>
                         {getData(skillsData, 'skills').data.map(
                           (item, index) => {
-                            const { name } = item;
+                            const { name, img } = item;
                             return (
                               <div
-                                className='w-2/3 text-center xl:text-left mx-auto xl:mx-0'
+                                className='w-2/3  xl:text-left mx-auto xl:mx-0 mb-1'
                                 key={index}>
-                                <div className='font-medium'>{name}</div>
-                              </div>
-                            );
-                          }
-                        )}
-                      </div>
-                    </div>
-                    {/* tools */}
-                    <div>
-                      <h4 className='text-xl font-semibold mb-2 xl:text-left'>
-                        Tools
-                      </h4>
-                      <div className='border-b border-border mb-4'></div>
-                      {/* Tool lists */}
-                      <div className='flex gap-x-8 justify-center xl:justify-start'>
-                        {getData(skillsData, 'tools').data.map(
-                          (item, index) => {
-                            const { imgPath } = item;
-
-                            const isSpecialLogo =
-                              imgPath === '/about/nextjs.svg';
-
-                            return (
-                              <div className='hover:scale-110 transition-all ease-linear'>
-                                <Image
-                                  src={imgPath}
-                                  width={48}
-                                  height={48}
-                                  alt=''
-                                  priority
-                                  className={
-                                    isSpecialLogo ? 'special-logo' : ''
-                                  }
-                                />
+                                <div className='font-medium items-start'>
+                                  {name}:
+                                </div>
+                                <div className='flex justify-center  items-center xl:justify-start gap-4 mt-2'>
+                                  {img.map((tool, toolIndex) => {
+                                    const isSpecialLogo =
+                                      tool.imgPath === '/about/nextjs.svg';
+                                    return (
+                                      <div
+                                        key={toolIndex}
+                                        className=' group justify-between flex flex-col items-center pb-3 hover:scale-110 transition-all ease-in-out'>
+                                        <Image
+                                          src={tool.imgPath}
+                                          alt={tool.name}
+                                          width={35}
+                                          height={35}
+                                          className={
+                                            isSpecialLogo ? 'special-logo' : ''
+                                          }
+                                        />
+                                        <p className='text-xs opacity-0  group-hover:opacity-30'>
+                                          {tool.name}
+                                        </p>
+                                      </div>
+                                    );
+                                  })}
+                                </div>
                               </div>
                             );
                           }

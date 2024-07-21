@@ -39,23 +39,23 @@ const ProjectCard = ({ project }) => {
           </div> */}
         </div>
       </CardHeader>
-      <div className='h-full px-8 py-6'>
-        <Badge className='uppercase text-sm font-medium mb-2 absolute top-4 left-5'>
+      <div className='h-full px-4 py-4'>
+        <Badge className='uppercase text-sm font-medium mb-1 absolute top-4 left-5'>
           {project.category}
         </Badge>
         <h4 className='h4 mb-1'>{project.name}</h4>
-        <p className=' text-muted-foreground text-lg'>{project.description}</p>
+        <p className=' text-muted-foreground text-xs'>{project.description}</p>
       </div>
-      <div className='flex  justify-center gap-x-4 '>
+      <div className='flex justify-center gap-x-4 my-4 '>
         <Link
           href={project.link}
-          className=' w-[54px] h-[54px]
+          className=' w-[30px] h-[30px]
                rounded-full flex justify-center items-center  hover:text-primary hover:scale-150 ease-in-out transition-all'>
           <RiLink size={40} />
         </Link>
         <Link
           href={project.github}
-          className=' w-[54px] h-[54px]
+          className=' w-[30px] h-[30px]
                 flex justify-center items-center  hover:text-primary hover:scale-150 ease-in-out transition-all'>
           <RiGithubFill size={40} />
         </Link>
