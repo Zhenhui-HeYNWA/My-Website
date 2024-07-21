@@ -101,6 +101,9 @@ const skillsData = [
         imgPath: '/about/mongo.svg',
       },
       {
+        imgPath: '/about/react-query.svg',
+      },
+      {
         imgPath: '/about/nextjs.svg',
       },
       {

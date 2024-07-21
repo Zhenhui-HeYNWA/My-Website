@@ -17,22 +17,22 @@ import ProjectCard from '@/components/ProjectCard';
 
 const projectData = [
   {
-    image: '/work/1.png',
+    image: '/work/react-twitter-clone.png',
     category: 'React js ',
-    name: 'Nexa Website',
+    name: 'React-Twitter-Clone',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa.',
-    link: '/',
-    github: '/',
+      'React Twitter Clone is a modern social platform for posting, following, and real-time notifications.',
+    link: 'https://react-twitter-clone.onrender.com/',
+    github: 'https://github.com/Zhenhui-HeYNWA/React-Twitter-clone',
   },
   {
     image: '/work/next-weather-app.png',
     category: 'next js',
     name: 'Next-weather',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa.',
-    link: '/',
-    github: '/',
+      'Next.js Weather App provides real-time weather updates with a sleek, user-friendly interface..',
+    link: 'https://nextjs-weather-app-psi-peach.vercel.app/',
+    github: 'https://github.com/Zhenhui-HeYNWA/nextjs-weather-app',
   },
   {
     image: '/work/3.png',
