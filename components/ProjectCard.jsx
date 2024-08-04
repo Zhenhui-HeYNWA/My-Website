@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Card, CardHeader } from './ui/card';
-import { Github, Link2Icon } from 'lucide-react';
+
 import { Badge } from './ui/badge';
 import { RiGithubFill, RiLink } from 'react-icons/ri';
 
@@ -22,21 +22,6 @@ const ProjectCard = ({ project }) => {
             alt=''
             property=''
           />
-          {/* button links */}
-          {/* <div className='flex gap-x-4'>
-            <Link
-              href={project.link}
-              className='bg-[#15A374] w-[54px] h-[54px]
-               rounded-full flex justify-center items-center scale-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200'>
-              <Link2Icon className='text-white' />
-            </Link>
-            <Link
-              href={project.github}
-              className='bg-[#15A374] w-[54px] h-[54px]
-               rounded-full flex justify-center items-center scale-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200'>
-              <Github className='text-white' />
-            </Link>
-          </div> */}
         </div>
       </CardHeader>
       <div className='h-full px-4 py-4'>
