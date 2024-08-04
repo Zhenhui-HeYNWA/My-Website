@@ -67,7 +67,7 @@ const skillsData = [
         img: [
           {
             name: 'VScode',
-            imgPath: '/about/vscode.svg',
+            imgPath: '/about/vscode1.svg',
           },
           {
             name: 'Postman',
