@@ -66,7 +66,7 @@ const skillsData = [
         name: 'Development Tools',
         img: [
           {
-            name: 'Visual Studio Code',
+            name: 'VScode',
             imgPath: '/about/vscode.svg',
           },
           {
@@ -79,7 +79,7 @@ const skillsData = [
         name: 'Styling',
         img: [
           {
-            name: 'Tailwind CSS',
+            name: 'Tailwind',
             imgPath: '/about/tailwind.svg',
           },
           {
@@ -176,7 +176,7 @@ const About = () => {
                 <TabsContent value='personal'>
                   <div className='text-center xl:text-left'>
                     <h3 className='h3 mb-4'>
-                      Unmatched Service Quality for over 10 years{' '}
+                      Unmatched Service Quality for over 1 years{' '}
                     </h3>
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
                       I specialize in crafting intuitive websites with
@@ -309,29 +309,31 @@ const About = () => {
                             const { name, img } = item;
                             return (
                               <div
-                                className='w-2/3  xl:text-left mx-auto xl:mx-0 mb-1'
+                                className='w-2/3  xl:text-left mx-auto xl:mx-0 mb-1 flex items-center '
                                 key={index}>
-                                <div className='font-medium items-start'>
+                                <div
+                                  className='font-medium items-start text-xs md:text-xl
+                                '>
                                   {name}:
                                 </div>
-                                <div className='flex justify-center  items-center xl:justify-start gap-4 mt-2'>
+                                <div className='flex  justify-start  items-center xl:justify-start gap-2 mt-2 relative'>
                                   {img.map((tool, toolIndex) => {
                                     const isSpecialLogo =
                                       tool.imgPath === '/about/nextjs.svg';
                                     return (
                                       <div
                                         key={toolIndex}
-                                        className=' group justify-between flex flex-col items-center pb-3 hover:scale-110 transition-all ease-in-out'>
+                                        className=' group justify-between gap-4 flex flex-col items-center pb-3 hover:scale-110 transition-all ease-in-out'>
                                         <Image
                                           src={tool.imgPath}
                                           alt={tool.name}
                                           width={35}
                                           height={35}
-                                          className={
+                                          className={` max-w-none
                                             isSpecialLogo ? 'special-logo' : ''
-                                          }
+                                          `}
                                         />
-                                        <p className='text-xs opacity-0  group-hover:opacity-30'>
+                                        <p className=' absolute text-xs opacity-0  group-hover:opacity-30 bottom-0 '>
                                           {tool.name}
                                         </p>
                                       </div>
