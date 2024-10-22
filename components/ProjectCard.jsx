@@ -15,10 +15,10 @@ const ProjectCard = ({ project }) => {
         dark:bg-secondary/40 xl:bg-work_project_bg_light 
         xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden'>
           <Image
-            className='absolute bottom-5  shadow-2xl rounded-xl hover:scale-125 ease-in-out transition-all '
+            className='absolute bottom-5 p-6 shadow-2xl rounded-xl hover:scale-125 ease-in-out transition-all '
             src={project.image}
-            width={320}
-            height={320}
+            width={350}
+            height={350}
             alt=''
             property=''
           />

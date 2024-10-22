@@ -30,14 +30,14 @@ const qualificationData = [
     title: 'education',
     data: [
       {
-        university: 'Example University',
+        university: 'Rmit University',
         qualificationData: 'Bachelor of IT',
         years: ' 2018 - 2023',
       },
       {
-        university: 'Example University',
-        qualificationData: 'Bachelor of IT',
-        years: '2018 - 2023',
+        university: 'HuaShang University',
+        qualificationData: 'College of Graphic design',
+        years: '2015 - 2017',
       },
     ],
   },
@@ -45,14 +45,14 @@ const qualificationData = [
     title: 'experiences',
     data: [
       {
-        company: 'XXXX',
-        role: 'xxx',
-        years: '2015',
+        company: 'ChengDa Whole House Customisation ',
+        role: 'Furniture Designer',
+        years: '2017',
       },
       {
-        company: 'XXXX',
-        role: 'xxx',
-        years: '2022-2024',
+        company: 'Shanghai Street',
+        role: 'Supervisor',
+        years: '2022-present',
       },
     ],
   },

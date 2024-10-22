@@ -14,63 +14,7 @@ import { Pagination } from 'swiper/modules';
 
 //components
 import ProjectCard from '@/components/ProjectCard';
-
-const projectData = [
-  {
-    image: '/work/react-twitter-clone.png',
-    category: 'React js ',
-    name: 'React-Twitter-Clone',
-    description:
-      'React Twitter Clone is a modern social platform for posting, following, and real-time messages.',
-    link: 'https://react-twitter-clone.onrender.com/',
-    github: 'https://github.com/Zhenhui-HeYNWA/React-Twitter-clone',
-  },
-  {
-    image: '/work/next-weather-app.png',
-    category: 'next js',
-    name: 'Next-weather',
-    description:
-      'Next.js Weather App provides real-time weather updates with a sleek, user-friendly interface.',
-    link: 'https://nextjs-weather-app-psi-peach.vercel.app/',
-    github: 'https://github.com/Zhenhui-HeYNWA/nextjs-weather-app',
-  },
-  {
-    image: '/work/3.png',
-    category: 'React js',
-    name: 'Nexa Website',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/4.png',
-    category: 'Fullstack',
-    name: 'Nexa Website',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/3.png',
-    category: 'next js',
-    name: 'Envision Website',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa.',
-    link: '/',
-    github: '/',
-  },
-  {
-    image: '/work/1.png',
-    category: 'React js',
-    name: 'Nova Website',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa.',
-    link: '/',
-    github: '/',
-  },
-];
+import { projectData } from '@/public/stores/projects';
 
 const Work = () => {
   return (

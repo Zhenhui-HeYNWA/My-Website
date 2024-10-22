@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { Download, Send } from 'lucide-react';
@@ -14,6 +16,29 @@ import Badge from './Badge';
 import Socials from './Socials';
 
 const Hero = () => {
+  const handleDownloadCV = () => {
+    fetch('/reviews/ZhenhuiHe(Herbert)-resume.pdf')
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return res.blob();
+      })
+      .then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'ZhenhuiHe-resume.pdf'; // Just the file name, no path
+        alink.click();
+
+        // Revoke the object URL after download
+        window.URL.revokeObjectURL(fileURL);
+      })
+      .catch((error) => {
+        console.error('Error fetching and downloading PDF:', error);
+      });
+  };
   return (
     <section className='py-12 xl:py-24 h-[84vh] xt:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none '>
       <div className='container mx-auto'>
@@ -37,7 +62,10 @@ const Hero = () => {
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant='secondary' className='gap-x-2 shadow-md'>
+              <Button
+                variant='secondary'
+                className='gap-x-2 shadow-md'
+                onClick={handleDownloadCV}>
                 Download CV <Download size={18} />
               </Button>
             </div>
